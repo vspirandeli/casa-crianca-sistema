@@ -1,0 +1,26 @@
+{
+  "plugins": ["eslint-plugin-import-helpers"],
+  "extends": ["next/core-web-vitals", "plugin:prettier/recommended"],
+
+  "rules": {
+    "@typescript-eslint/no-empty-function": "off",
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always",
+        "groups": [
+          ["/^use client/"],
+          ["/^react/", "/^next/"],
+          ["parent", "sibling", "index", "/^@shared/", "/^@components/"],
+          "/^@hooks/",
+          ["/^@configs/", "/^@utils/"],
+          ["/^style/", "/^./styles/", "/@styles/"],
+          ["/^@assets/", "/SVG$/", "/.svg$/", "/.png$/"],
+          "/^@interface/"
+        ],
+
+        "alphabetize": { "order": "asc", "ignoreCase": true }
+      }
+    ]
+  }
+}
