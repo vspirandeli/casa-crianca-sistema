@@ -22,6 +22,7 @@
     "paths": {
       "@interfaces/*": ["./src/interfaces/*"],
       "@components/*": ["./src/components/*"],
+      "@templates/*": ["./src/templates/*"],
       "@hooks/*": ["./src/hooks/*"],
       "@utils/*": ["./src/utils/*"],
       "@shared/*": ["./src/shared/*"],

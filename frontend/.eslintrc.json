@@ -11,7 +11,14 @@
         "groups": [
           ["/^use client/"],
           ["/^react/", "/^next/", "module"],
-          ["parent", "sibling", "index", "/^@shared/", "/^@components/"],
+          [
+            "parent",
+            "sibling",
+            "index",
+            "/^@shared/",
+            "/^@components/",
+            "/^@templates/"
+          ],
           "/^@hooks/",
           ["/^@configs/", "/^@utils/"],
           ["/^style/", "/^./styles/", "/@styles/"],

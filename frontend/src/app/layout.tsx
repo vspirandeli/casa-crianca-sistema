@@ -16,10 +16,13 @@ export default function RootLayout({
 }) {
   return (
     // <html lang="pt-BR" className="dark"> // to set darkmode
-    <html lang="pt-BR">
+    <html
+      lang="pt-BR"
+      className="bg-gray-300 drop-shadow-md dark:bg-slate-800 overflow-hidden h-full"
+    >
       <body
         className={twMerge(
-          'max-w-screen-2xl mx-auto shadow-lg bg-gray-300 dark:bg-gray-700',
+          'max-w-screen-2xl mx-auto shadow-lg bg-gray-100 dark:bg-gray-700 h-full overflow-hidden',
         )}
       >
         <LayoutProvider>{children}</LayoutProvider>
